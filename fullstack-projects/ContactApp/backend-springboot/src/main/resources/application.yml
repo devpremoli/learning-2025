@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: backend-springboot
+  datasource:
+    url: jdbc:postgresql://localhost:5432/contact_api_db
+    username: postgres
+    password: Devprem0li!
+  jpa:
+    database-platform: org.hibernate.dialect.PosgreSQLInnoDBDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  mvc:
+    async:
+      request-timeout: 3600000
+  web:
+    resources:
+      add-mappings: false
+
+server:
+  port: 8080
+  error:
+    path: /user/error
+    whitelabel:
+      enabled: false
+    include-message: always
+    include-stacktrace: always
+    include-binding-errors: always
