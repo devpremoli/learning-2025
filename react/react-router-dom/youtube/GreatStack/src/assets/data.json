@@ -1,0 +1,22 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "title": "Sr. React Developer",
+            "salary": 50000,
+            "location": "UK"
+        },
+        {
+            "id": 2,
+            "title": "Jr. React Developer",
+            "salary": 10000,
+            "location": "China"
+        },
+        {
+            "id": 3,
+            "title": "Lead React Developer",
+            "salary": 100000,
+            "location": "USA"
+        }
+    ]
+}
